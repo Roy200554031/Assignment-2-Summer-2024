@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Week-2 Lecture-2-->
+
+        <!-- this declares charset UTF-8 -->
+        <meta charset="utf-8">
+        <!--this declares the viewport the application is being viewed on -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--this describes the page content-->
+        <meta name="description" content="Assignment-2 Pizza Shop">
+
+    <title>Pizza Shop</title> <!--title of page-->
+    <link rel="stylesheet" href="styles.css"> <!--this will link css to html-->
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="container header">
+        <h1>Welcome to Georgian Pizza Shop !!</h1>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main class="container">
+        
+        <!-- Order Form Section -->
+        <section id="order-form-section" class="form-section">
+            <h2>Order Your delicious Pizza</h2>
+            <form id="pizza-order-form">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="contact number">Contact Number:</label>
+                    <input type="contact number" id="contact number" name="contact number" required>  
+                </fieldset>
+
+                <!-- Pizza Order Details -->
+                <fieldset>
+                    <legend>Pizza Details</legend>
+                    <label for="quantity">How many pizzas?</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                    <br>
+                    <label for="size">Choose pizza size:</label>
+                    <br>
+                    <input type="radio" id="One slice" name="size" value="One slice" required>
+                    <label for="One slice">One slice</label>
+                    <input type="radio" id="small" name="size" value="small" required>
+                    <label for="small">Small - 6"</label>
+                    <input type="radio" id="medium" name="size" value="medium">
+                    <label for="medium">Medium - 8"</label>
+                    <input type="radio" id="large" name="size" value="large">
+                    <label for="large">Large - 10"</label>
+                    <br>
+                    <br>
+                    <label for="toppings">Choose your toppings:</label>
+                    <br>
+                    <input type="checkbox" id="Brooklyn pepperoni" name="toppings" value="Brooklyn pepperoni">
+                    <label for="Brooklyn pepperoni">Brooklyn Pepperoni</label>
+                    <input type="checkbox" id="Ham" name="toppings" value="Ham mushrooms">
+                    <label for="Ham">Ham</label>
+                    <input type="checkbox" id="onions" name="toppings" value="onions">
+                    <label for="onions">Onions</label>
+                    <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                    <label for="sausage">Sausage</label>
+                    <input type="checkbox" id="bacon" name="toppings" value="bacon">
+                    <label for="bacon">Bacon</label>
+                    <input type="checkbox" id="Tomato" name="toppings" value="Tomato">
+                    <label for="Tomato">Tomato</label>
+                    <br>
+                    
+                </fieldset>
+
+                <!-- Additional Comments -->
+                <fieldset>
+                    <legend>Extras</legend>
+                    <label for="comments">Any special comments ??</label>
+                    <br>
+                    <textarea id="comments" name="comments" rows="6" cols="60"></textarea>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="container footer">
+        <p>&copy; 2024 Summer Pizza Shop. All rights reserved to Georgian College, Barrie.</p>
+    </footer>
+</body>
+</html>
